@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+footer{
+
+}
+
+.upperFooter{
+  background-color: #324376;
+}
+
+.lowerFooter{
+  background-color: #586BA4;
+}
