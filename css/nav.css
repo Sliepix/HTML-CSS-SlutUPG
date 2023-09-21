@@ -1,38 +1,77 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-nav{
-  padding: 10px;
-  background-color: blue;
-  
+nav {
+  background-color: fffff;
+  padding: 30px 300px;
+  box-shadow: 1px 6px 15px -1px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 1px 6px 15px -1px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 1px 6px 15px -1px rgba(0, 0, 0, 0.28);
+  z-index: 12;
+  position: relative;
 }
-
-.topnav{
+.topnav {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
-
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
 }
 
-.topnavright{
+.leftNav{
   display: flex;
-  background-color: #586BA4;
-  gap: 20px;
+  gap: 30px;
+  align-items: center;
+}
+.navTitle{
+  display: flex;
+  font-size: 30px;
+  font-family: 'Ubuntu', sans-serif; 
+  font-weight: 700;
+  align-items: center;
 }
 
-.searchWrapper{
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+
+.topNavCenter {
+  display: flex;
+  gap: 50px;
+  color: black;
+}
+
+.topnavright {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.searchWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 0px;
 }
 
-.searchbar{
+.searchbar {
   display: flex;
-  background-color: #CEB5B7;
+  background-color: #f6f6f8;
   width: 300px;
   border-radius: 14px;
+  border: 1px solid black;
+
   justify-content: space-evenly;
   align-items: center;
+
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 2px;
 }
