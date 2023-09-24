@@ -12,18 +12,25 @@ font-family: 'Ubuntu', sans-serif; */
   background-size: cover;
   background-image: url("../lib/img/beauty1.jpg");
   width: 100vw;
-  height: 100vh;
   z-index: -1;
+  display: flex;
+  justify-content: center;
 }
 
 main{
-  position: relative;
-  z-index: 1;
 }
 
-.gridContainer{
-  display: grid;
-  grid-template-columns: 33% 1em auto;
-  grid-template-rows: 50% 1fr 1fr;
-  height: 100px;
+.banderollContainer{
+  display: flex;
+  justify-content: center;
+}
+.banderoll{
+  width: 1200px;
+  margin-bottom: 50px ;
+  border: solid;
+  position: relative;
+}
+
+.banderoll img{
+  
 }
