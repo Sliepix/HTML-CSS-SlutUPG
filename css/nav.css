@@ -19,17 +19,18 @@ nav {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-size: 20px;
+  width: 100%;
 }
 
-.leftNav{
+.leftNav {
   display: flex;
   gap: 30px;
   align-items: center;
 }
-.navTitle{
+.navTitle {
   display: flex;
   font-size: 30px;
-  font-family: 'Ubuntu', sans-serif; 
+  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   align-items: center;
 }
@@ -38,7 +39,6 @@ nav {
   text-decoration: none;
   color: black;
 }
-
 
 .topNavCenter {
   display: flex;
@@ -52,12 +52,17 @@ nav {
   align-items: center;
 }
 
+.topnavright img:hover {
+  cursor: pointer;
+}
+
 .searchWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 0px;
+  min-width: 150px;
 }
 
 .searchbar {
@@ -70,8 +75,41 @@ nav {
   justify-content: space-evenly;
   align-items: center;
 
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-size: 15px;
   letter-spacing: 2px;
+}
+
+.searchbar img:hover {
+  cursor: pointer;
+}
+
+.search {
+  border: none;
+  background-color: #f6f6f8;
+  outline: none;
+}
+
+@media screen and (max-width: 980px) {
+  .topnav {
+    width: 560px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  nav {
+    padding: 10px;
+  }
+
+  nav * {
+    font-size: 13px;
+  }
+  .navTitle {
+    font-size: 20px;
+  }
+  .topnav {
+    width: 330px;
+    padding: 10px;
+  }
 }

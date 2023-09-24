@@ -1,36 +1,132 @@
 /* font-family: 'Josefin Sans', sans-serif;
 font-family: 'Ubuntu', sans-serif; */
 
-*{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
+* p,
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+}
 
-.bgContainer{ 
-  background-size: cover;
+main {
+  background-size: contain;
   background-image: url("../lib/img/beauty1.jpg");
+  background-repeat: repeat-y;
+}
+.section {
+  height: auto;
   width: 100vw;
   z-index: -1;
   display: flex;
   justify-content: center;
+  gap: 10;
+}
+.prods {
+  margin-top: 20px;
+  font-size: 50px;
+  overflow-y: hidden;
 }
 
-main{
+.bgBoard {
+  width: 55%;
+  height: auto;
+  background-color: white;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.banderollContainer{
+#banderollContainer1 {
   display: flex;
   justify-content: center;
-}
-.banderoll{
-  width: 1200px;
-  margin-bottom: 50px ;
-  border: solid;
-  position: relative;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #e9e8e8;
+  max-width: 700px;
+  padding: 40px;
+  gap: 10px;
 }
 
-.banderoll img{
-  
+#banderollContainer1:hover {
+  cursor: pointer;
+  transform: scale(1.005);
+}
+
+#banderollContainer1 img {
+  max-width: 500px;
+  position: relative;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#banderollContainer1 p {
+  max-width: 500px;
+}
+
+#containerBr {
+  display: flex;
+  gap: 10px;
+  overflow-y: hidden;
+}
+.banderollContainer2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e9e8e8;
+  max-width: 500px;
+  border-radius: 10px;
+  gap: 10px;
+  padding: 40px;
+}
+
+.banderollContainer2 img {
+  max-width: 200px;
+  max-height: 100px;
+  position: relative;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.banderollContainer2 p {
+  max-width: 205px;
+}
+
+.banderollContainer2:hover {
+  cursor: pointer;
+  transform: scale(1.005);
+}
+
+#ourProdsWrap {
+  max-width: 700px;
+}
+
+@media screen and (max-width: 980px) {
+}
+
+@media screen and (max-width: 360px) {
+  #banderollContainer1 {
+    max-width: 150px;
+    font-size: 15px;
+  }
+  #banderollContainer1 h1 {
+    width: 140px;
+  }
+  #banderollContainer1 img {
+    width: 150px;
+  }
+
+  #containerBr {
+    flex-direction: column;
+  }
 }
